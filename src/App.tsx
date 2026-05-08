@@ -40,6 +40,7 @@ export default function App() {
         title={<>De l'identification<br />du site au <em>PPA signé</em></>}
         imgSrc="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1200&q=80"
         imgAlt="Solaire Afrique"
+        bgColor="#030810"
         steps={[
           { title: 'Identification & Sélection de sites', desc: 'Prospection terrain, analyse des ressources solaires, hydrologiques, éoliennes et biomasse.' },
           { title: 'Études complètes', desc: 'Faisabilité, études d\'impact environnemental, études techniques et connexion réseau.' },
@@ -69,6 +70,7 @@ export default function App() {
         title={<>Des données brutes<br />aux <em>décisions clés</em></>}
         imgSrc="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&q=80"
         imgAlt="Big Data Africa"
+        bgColor="#030810"
         steps={[
           { title: 'Collecte & Modélisation', desc: 'Agrégation de sources multiples dans un modèle flexible et évolutif.' },
           { title: 'Traitement & Nettoyage', desc: 'Enrichissement et organisation des données pour exactitude et fiabilité.' },
