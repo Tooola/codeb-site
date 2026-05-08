@@ -25,15 +25,10 @@ export default function About() {
           <em>clé en main · bout en bout</em>
         </h2>
         <p>
-          CODEB est un développeur de projets d'énergies renouvelables et
-          d'infrastructures en Afrique. Nous prenons en charge chaque projet
-          depuis l'identification du site jusqu'à la signature du PPA — et
-          au-delà, avec notre équipe technique dédiée à la construction.
-        </p>
+         CODEB est une entreprise pluridisciplinaire qui identifie, finance et déploie des projets à fort impact — des énergies propres aux infrastructures essentielles.
         <p>
-          Solaire, hydroélectrique, biomasse, éolien : nous développons,
-          finançons et construisons des centrales avec une maîtrise totale
-          du cycle projet.
+          Nous offrons aux gouvernements et investisseurs un accès clé-en-main : analyses de marché, structuration financière, et exécution technique de bout en bout.
+        </p>
         </p>
         <div className="about-pills">
           {pills.map(p => (

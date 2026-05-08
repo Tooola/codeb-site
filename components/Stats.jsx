@@ -4,7 +4,7 @@ const stats = [
   { val: 4,   suffix: '',  label: 'Pays présents' },
   { val: 4,   suffix: '',  label: 'Secteurs clés' },
   { val: 360, suffix: '°', label: 'Accompagnement' },
-  { val: 1,   suffix: '',  label: 'Partenaire de confiance' },
+  { val: 19,   suffix: '',  label: 'Partenaire de confiance' },
 ]
 
 function StatItem({ val, suffix = '', label }) {

@@ -3,8 +3,8 @@ export default function Hero() {
     <section className="hero">
       <div className="hero-video-wrap">
         <img
-          src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1800&q=85"
-          alt="Africa Infrastructure"
+          src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=1800&q=85"
+          alt="Centrale solaire Afrique"
         />
       </div>
       <div className="hero-vignette" />
