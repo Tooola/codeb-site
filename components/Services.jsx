@@ -7,7 +7,7 @@ const svcs = [
     img: 'https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=600&q=80',
     imgAlt: 'Panneaux solaires champ Afrique',
     title: 'Énergies Renouvelables',
-    desc: "Développeur clé en main de centrales solaires, hydroélectriques, biomasse et éoliennes de l'identification du site à la signature du PPA et à la construction.",
+    desc: "Développeur clé en main de centrales solaires, hydroélectriques, biomasse et éoliennes de l'identification site jusqu'à sa mise en œuvre.",
     tags: ['Solaire', 'Hydro', 'Biomasse', 'Éolien', 'PPA'],
   },
   {

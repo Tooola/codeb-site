@@ -13,10 +13,10 @@ export default function About() {
           <em>clé en main · bout en bout</em>
         </h2>
         <p>
-         CODEB est une entreprise pluridisciplinaire qui identifie, finance et déploie des projets à fort impact des énergies propres aux infrastructures essentielles.
+          CODEB est une entreprise pluridisciplinaire qui identifie, finance et déploie des projets à fort impact des énergies propres aux infrastructures essentielles.
+        </p>
         <p>
           Nous offrons aux gouvernements et investisseurs un accès clé-en-main : analyses de marché, structuration financière, et exécution technique de bout en bout.
-        </p>
         </p>
         <div className="about-pills">
           {pills.map(p => (
@@ -25,7 +25,7 @@ export default function About() {
         </div>
       </div>
       <div className="about-visual">
-        <img src="/images/hero.jpg" alt="À propos" />
+        <img src="/images/pont.png" alt="À propos" />
         <div className="about-visual-overlay"></div>
       </div>
     </section>

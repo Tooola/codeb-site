@@ -3,7 +3,7 @@ export default function Hero() {
     <section className="hero">
       <div className="hero-video-wrap">
         <img
-          src="/images/hero.jpg"
+          src="/images/hero.png"
           alt="Centrale solaire Afrique"
         />
       </div>
