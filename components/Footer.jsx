@@ -4,13 +4,13 @@ export default function Footer() {
       <div className="footer-grid">
 
         <div className="footer-brand">
-          <div className="logo">CODEB<span>.</span></div>
+          <div className="logo"><img src="/images/logo.png" alt="codeb-logo" /></div>
           <p className="footer-tagline">Le Pont vers l'Afrique</p>
           <p>
             Partenaire stratégique pour le développement durable et
             l'investissement en Afrique depuis Luxembourg.
           </p>
-          <p style={{ marginTop: '1rem', fontSize: '0.8rem', color: 'rgba(232,244,253,0.22)' }}>
+          <p style={{ marginTop: '1rem', fontSize: '0.8rem', color: 'var(--text-very-dim)' }}>
             info@codebltd.com · www.codebltd.com
           </p>
         </div>

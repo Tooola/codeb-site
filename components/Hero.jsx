@@ -3,7 +3,7 @@ export default function Hero() {
     <section className="hero">
       <div className="hero-video-wrap">
         <img
-          src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=1800&q=85"
+          src="/images/hero.jpg"
           alt="Centrale solaire Afrique"
         />
       </div>
@@ -13,16 +13,15 @@ export default function Hero() {
 
       <div className="hero-content">
         <div className="hero-eyebrow">
-          <span>CODEB Sarl · Luxembourg · Afrique</span>
+          <span>CODEB Sarl · Europe · Afrique</span>
         </div>
         <h1 className="hero-title">
-          Construire<br />
-          <em>l'Afrique</em>
-          <strong>de demain</strong>
+          Le pont vers<br />
+          <strong>l'Afrique</strong>
         </h1>
         <div className="hero-sub-row">
           <p className="hero-desc">
-            Énergies renouvelables, infrastructures, eau &amp; big data —
+            Énergies renouvelables, infrastructures, eau &amp; big data
             nous sommes votre pont vers les opportunités africaines.
           </p>
           <div className="hero-scroll-hint">

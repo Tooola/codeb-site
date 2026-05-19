@@ -31,9 +31,8 @@ export default function Locations() {
           <h2 className="locations-title">
             Nos<br /><em>bureaux</em>
           </h2>
-          <p style={{ marginTop: '1.5rem', fontSize: '0.88rem', fontWeight: 300, lineHeight: 1.8, color: 'rgba(232,244,253,0.42)' }}>
-            Un réseau stratégique ancré sur deux continents pour vous accompagner
-            où vous en avez besoin.
+          <p style={{ marginTop: '1.5rem', fontSize: '0.88rem', fontWeight: 300, lineHeight: 1.8, color: 'var(--text-dim)' }}>
+            Un réseau stratégique ancré sur deux continents pour vous accompagner où vous en avez besoin.
           </p>
           <a href="mailto:info@codebltd.com" className="contact-btn">
             Nous contacter →

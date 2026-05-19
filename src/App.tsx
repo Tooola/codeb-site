@@ -9,6 +9,11 @@ import Feature from '../components/Feature'
 import Stats from '../components/Stats'
 import Locations from '../components/Locations'
 import Footer from '../components/Footer'
+import { 
+  MapPin, FileText, FileSignature, Landmark, Building2,
+  Lightbulb, Zap, Plug, Wrench,
+  Database, Layers, HardDrive, PieChart
+} from 'lucide-react'
 import './index.css'
 
 export default function App() {
@@ -40,13 +45,12 @@ export default function App() {
         title={<>De l'identification<br />du site au <em>PPA signé</em></>}
         imgSrc="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1200&q=80"
         imgAlt="Solaire Afrique"
-        bgColor="#030810"
         steps={[
-          { title: 'Identification & Sélection de sites', desc: 'Prospection terrain, analyse des ressources solaires, hydrologiques, éoliennes et biomasse.' },
-          { title: 'Études complètes', desc: 'Faisabilité, études d\'impact environnemental, études techniques et connexion réseau.' },
-          { title: 'Autorisations & Permis', desc: 'Sécurisation des terrains, permis de construire et autorisations réglementaires.' },
-          { title: 'Financement & PPA / PIE', desc: 'Recherche de financements adaptés et négociation des contrats d\'achat d\'électricité.' },
-          { title: 'Construction des centrales', desc: 'Notre équipe technique assure la construction et la mise en service des centrales.' },
+          { icon: <MapPin className="step-icon-svg" />, title: 'Identification & Sélection de sites', desc: 'Prospection terrain, analyse des ressources solaires, hydrologiques, éoliennes et biomasse.' },
+          { icon: <FileText className="step-icon-svg" />, title: 'Études complètes', desc: 'Faisabilité, études d\'impact environnemental, études techniques et connexion réseau.' },
+          { icon: <FileSignature className="step-icon-svg" />, title: 'Autorisations & Permis', desc: 'Sécurisation des terrains, permis de construire et autorisations réglementaires.' },
+          { icon: <Landmark className="step-icon-svg" />, title: 'Financement', desc: 'Recherche de financements adaptés et négociation des contrats d\'achat d\'électricité.' },
+          { icon: <Building2 className="step-icon-svg" />, title: 'Construction des centrales', desc: 'Notre équipe technique assure la construction et la mise en service des centrales.' },
         ]}
       />
       <Feature
@@ -56,12 +60,11 @@ export default function App() {
         imgSrc="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=1200&q=80"
         imgAlt="Infrastructure électrique"
         reversed
-        bgColor="#060d18"
         steps={[
-          { title: 'Études d\'électrification', desc: 'Élaboration des études techniques et plans d\'électrification rurale et urbaine.' },
-          { title: 'Installation de poteaux', desc: 'Déploiement des lignes de distribution, pose et installation des poteaux électriques.' },
-          { title: 'Raccordement au réseau', desc: 'Connexion aux réseaux existants, sous-stations et systèmes de protection.' },
-          { title: 'Maintenance & Suivi', desc: 'Supervision continue et consultation en maintenance des installations électriques.' },
+          { icon: <Lightbulb className="step-icon-svg" />, title: 'Études d\'électrification', desc: 'Élaboration des études techniques et plans d\'électrification rurale et urbaine.' },
+          { icon: <Zap className="step-icon-svg" />, title: 'Installation de poteaux', desc: 'Déploiement des lignes de distribution, pose et installation des poteaux électriques.' },
+          { icon: <Plug className="step-icon-svg" />, title: 'Raccordement au réseau', desc: 'Connexion aux réseaux existants, sous-stations et systèmes de protection.' },
+          { icon: <Wrench className="step-icon-svg" />, title: 'Maintenance & Suivi', desc: 'Supervision continue et consultation en maintenance des installations électriques.' },
         ]}
       />
       <Feature
@@ -70,12 +73,11 @@ export default function App() {
         title={<>Des données brutes<br />aux <em>décisions clés</em></>}
         imgSrc="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&q=80"
         imgAlt="Big Data Africa"
-        bgColor="#030810"
         steps={[
-          { title: 'Collecte & Modélisation', desc: 'Agrégation de sources multiples dans un modèle flexible et évolutif.' },
-          { title: 'Traitement & Nettoyage', desc: 'Enrichissement et organisation des données pour exactitude et fiabilité.' },
-          { title: 'Stockage optimisé', desc: 'Architecture efficace pour maximiser l\'exploration et la business intelligence.' },
-          { title: 'Dashboards & Rapports fiables', desc: 'Informations livrées aux ministères et équipes opérationnelles en temps réel.' },
+          { icon: <Database className="step-icon-svg" />, title: 'Collecte & Modélisation', desc: 'Agrégation de sources multiples dans un modèle flexible et évolutif.' },
+          { icon: <Layers className="step-icon-svg" />, title: 'Traitement & Nettoyage', desc: 'Enrichissement et organisation des données pour exactitude et fiabilité.' },
+          { icon: <HardDrive className="step-icon-svg" />, title: 'Stockage optimisé', desc: 'Architecture efficace pour maximiser l\'exploration et la business intelligence.' },
+          { icon: <PieChart className="step-icon-svg" />, title: 'Dashboards & Rapports fiables', desc: 'Informations livrées aux ministères et équipes opérationnelles en temps réel.' },
         ]}
       />
       <Stats />

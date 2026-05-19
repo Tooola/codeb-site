@@ -1,23 +1,28 @@
+import { Zap, Droplets, Database, Sun } from 'lucide-react'
+
 const svcs = [
   {
     num: '01',
+    icon: Sun,
     img: 'https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=600&q=80',
     imgAlt: 'Panneaux solaires champ Afrique',
     title: 'Énergies Renouvelables',
-    desc: "Développeur clé en main de centrales solaires, hydroélectriques, biomasse et éoliennes — de l'identification du site à la signature du PPA et à la construction.",
+    desc: "Développeur clé en main de centrales solaires, hydroélectriques, biomasse et éoliennes de l'identification du site à la signature du PPA et à la construction.",
     tags: ['Solaire', 'Hydro', 'Biomasse', 'Éolien', 'PPA'],
   },
   {
     num: '02',
-    img: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=600&q=80',
+    icon: Zap,
+    img: '/images/InfraElectrique.png',
     imgAlt: 'Lignes haute tension pylônes électriques',
     title: 'Infrastructure Électrique',
-    desc: "Études d'électrification, installation de poteaux, raccordement au réseau et lignes haute tension — de la conception à la mise en service.",
+    desc: "Études d'électrification, installation de poteaux, raccordement au réseau et lignes haute tension de la conception à la mise en service.",
     tags: ['Électrification', 'Poteaux', 'Raccordement', 'Haute tension'],
   },
   {
     num: '03',
-    img: 'https://images.unsplash.com/photo-1544013697-d3eb6c72c7a7?w=600&q=80',
+    icon: Droplets,
+    img: '/images/eaux&infra.png',
     imgAlt: 'Château eau infrastructure hydraulique',
     title: 'Eaux & Infrastructures',
     desc: "Villes intelligentes, réseaux d'eau, dessalement et stations d'épuration pour besoins industriels et municipaux.",
@@ -25,7 +30,8 @@ const svcs = [
   },
   {
     num: '04',
-    img: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&q=80',
+    icon: Database,
+    img: '/images/bigdata.jpg',
     imgAlt: 'Big Data solutions',
     title: 'Solutions Big Data',
     desc: 'Collecte, modélisation et dashboards pour transformer les données brutes en décisions stratégiques pour institutions et entreprises.',
@@ -44,7 +50,7 @@ export default function Services() {
           </h2>
         </div>
         <p>
-          De l'identification du site jusqu'à la mise en service — CODEB développe,
+          De l'identification du site jusqu'à la mise en service CODEB développe,
           finance et construit des projets d'énergie et d'infrastructure en Afrique,
           de bout en bout.
         </p>
@@ -53,17 +59,22 @@ export default function Services() {
       <div className="svc-grid">
         {svcs.map(s => (
           <div key={s.num} className="svc-card reveal">
-            <span className="svc-num">{s.num}</span>
+            <div className="svc-icon-badge">
+              <s.icon className="svc-icon" />
+            </div>
             <div className="svc-img-wrap">
               <img src={s.img} alt={s.imgAlt} />
               <div className="svc-img-overlay" />
             </div>
-            <h3>{s.title}</h3>
-            <p>{s.desc}</p>
-            <div className="svc-tags">
-              {s.tags.map(t => (
-                <span key={t} className="svc-tag">{t}</span>
-              ))}
+            <div className="svc-content">
+              <span className="svc-num">{s.num}</span>
+              <h3>{s.title}</h3>
+              <p>{s.desc}</p>
+              <div className="svc-tags">
+                {s.tags.map(t => (
+                  <span key={t} className="svc-tag">{t}</span>
+                ))}
+              </div>
             </div>
             <div className="svc-line" />
           </div>

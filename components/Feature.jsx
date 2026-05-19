@@ -6,10 +6,9 @@ export default function Feature({
   imgAlt,
   steps,
   reversed = false,
-  bgColor,
 }) {
   const overlayStyle = reversed
-    ? { background: 'linear-gradient(to left, transparent 55%, var(--deep) 100%)' }
+    ? { background: 'var(--overlay-feature-rev)' }
     : undefined
 
   const imgBlock = (
@@ -26,7 +25,9 @@ export default function Feature({
       <div className="steps">
         {steps.map((s, i) => (
           <div key={i} className="step">
-            <div className="step-dot" />
+            <div className="step-icon">
+              {s.icon ? s.icon : <div className="step-dot" />}
+            </div>
             <div className="step-body">
               <strong>{s.title}</strong>
               <span>{s.desc}</span>
@@ -41,7 +42,6 @@ export default function Feature({
     <section
       className={`feature${reversed ? ' reversed' : ''}`}
       id={id}
-      style={bgColor ? { background: bgColor } : undefined}
     >
       {reversed ? contentBlock : imgBlock}
       {reversed ? imgBlock : contentBlock}
