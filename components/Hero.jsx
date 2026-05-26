@@ -16,8 +16,7 @@ export default function Hero() {
           <span>CODEB Sarl · Europe · Afrique</span>
         </div>
         <h1 className="hero-title">
-          Le pont vers<br />
-          <strong>l'Afrique</strong>
+          Le pont vers <strong>l'Afrique</strong>
         </h1>
         <div className="hero-sub-row">
           <p className="hero-desc">

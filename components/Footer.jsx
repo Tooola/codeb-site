@@ -19,7 +19,7 @@ export default function Footer() {
           <h5>Services</h5>
           <a href="#energie">Solaire · Hydro · Biomasse · Éolien</a>
           <a href="#infrastructure">Infrastructure électrique</a>
-          <a href="#services">Eaux &amp; Infrastructures</a>
+          <a href="#services">Eaux &amp; Assainissement</a>
           <a href="#bigdata">Solutions Big Data</a>
           <a href="#contact">Nos bureaux</a>
         </div>
@@ -38,10 +38,13 @@ export default function Footer() {
       </div>
 
       <div className="footer-bottom">
-        <p>© 2025 CODEB Sarl. Tous droits réservés.</p>
-        <a href="http://www.codebltd.com" target="_blank" rel="noreferrer">
-          codebltd.com
-        </a>
+        <p>© Copyright CODEB SARL All Rights Reserved</p>
+        <p>
+          Designed by{' '}
+          <a href="https://www.codebsarl.com" target="_blank" rel="noreferrer" style={{ display: 'inline' }}>
+            Smart Design
+          </a>
+        </p>
       </div>
     </footer>
   )

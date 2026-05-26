@@ -4,11 +4,11 @@ const svcs = [
   {
     num: '01',
     icon: Sun,
-    img: 'https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=600&q=80',
+    img: '/images/EnerRenou.png',
     imgAlt: 'Panneaux solaires champ Afrique',
     title: 'Énergies Renouvelables',
     desc: "Développeur clé en main de centrales solaires, hydroélectriques, biomasse et éoliennes de l'identification site jusqu'à sa mise en œuvre.",
-    tags: ['Solaire', 'Hydro', 'Biomasse', 'Éolien', 'PPA'],
+    tags: ['Solaire', 'Hydro', 'Biomasse', 'Éolien'],
   },
   {
     num: '02',
@@ -24,7 +24,7 @@ const svcs = [
     icon: Droplets,
     img: '/images/eaux&infra.png',
     imgAlt: 'Château eau infrastructure hydraulique',
-    title: 'Eaux & Infrastructures',
+    title: 'Eaux & Assainissement',
     desc: "Villes intelligentes, réseaux d'eau, dessalement et stations d'épuration pour besoins industriels et municipaux.",
     tags: ['Smart Cities', 'Dessalement', 'Épuration'],
   },
