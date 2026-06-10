@@ -34,7 +34,8 @@ export default {
     pills: [
       'Solaire', 'Hydroélectrique', 'Biomasse', 'Éolien',
       'Infrastructure électrique', 'Eau & Assainissement', 'Big Data',
-    ]
+    ],
+    learn_more: 'En savoir plus'
   },
   services: {
     label: "Domaines d'intervention",

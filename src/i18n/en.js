@@ -34,7 +34,8 @@ export default {
     pills: [
       'Solar', 'Hydroelectric', 'Biomass', 'Wind',
       'Electrical infrastructure', 'Water & Sanitation', 'Big Data',
-    ]
+    ],
+    learn_more: 'Learn more'
   },
   services: {
     label: "Areas of Intervention",
