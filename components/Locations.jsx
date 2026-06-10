@@ -1,41 +1,22 @@
-const locs = [
-  {
-    flag: '🇱🇺', country: 'Luxembourg',
-    lines: ['3 Rue Heicht, 6926 Grevenmacher', 'Grand-Duché de Luxembourg'],
-    phone: '+352 661 215 835',
-  },
-  {
-    flag: '🇧🇯', country: 'Bénin',
-    lines: ['Lot 1611 Aibatin 2, 03 BP 1792', 'Cotonou, Bénin'],
-    phone: '+229 016 911 6297',
-  },
-  {
-    flag: '🇰🇪', country: 'Kenya',
-    lines: ['Riverside Square, 10e étage', 'Riverside Drive, Nairobi'],
-    phone: '+254 722 906 876',
-  },
-  {
-    flag: '🇹🇿', country: 'Tanzanie',
-    lines: ['Kimbiji House, 1er étage', '344 Ghuba Road, Dar es Salaam'],
-    phone: '+255 747 305 053',
-  },
-]
+import { useTranslation } from '../src/i18n/LanguageContext'
 
 export default function Locations() {
+  const { t } = useTranslation()
+  const locs = t('locations.items') || []
   return (
     <section className="locations" id="contact">
       <div className="locations-inner">
 
         <div className="reveal left">
-          <div className="section-label">Présence internationale</div>
+          <div className="section-label">{t('locations.label')}</div>
           <h2 className="locations-title">
-            Nos<br /><em>bureaux</em>
+            {t('locations.title_start')}<br /><em>{t('locations.title_strong')}</em>
           </h2>
           <p style={{ marginTop: '1.5rem', fontSize: '0.88rem', fontWeight: 300, lineHeight: 1.8, color: 'var(--text-dim)' }}>
-            Un réseau stratégique ancré sur deux continents pour vous accompagner où vous en avez besoin.
+            {t('locations.desc')}
           </p>
-          <a href="mailto:info@codebltd.com" className="contact-btn">
-            Nous contacter →
+          <a href="mailto:info@codebsarl.com" className="contact-btn">
+            {t('locations.contact_btn')}
           </a>
         </div>
 

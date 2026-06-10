@@ -1,15 +1,8 @@
-const items = [
-  'Solaire',
-  'Hydroélectrique',
-  'Biomasse',
-  'Éolien',
-  'Clé en Main · Bout en Bout',
-  'Infrastructure Électrique',
-  'Eau & Assainissement',
-  'Solutions Big Data',
-]
+import { useTranslation } from '../src/i18n/LanguageContext'
 
 export default function MarqueeBand() {
+  const { t } = useTranslation()
+  const items = t('marquee.items') || []
   // doubled for seamless loop
   const doubled = [...items, ...items]
 

@@ -1,11 +1,5 @@
 import { useEffect, useRef } from 'react'
-
-const stats = [
-  { val: 4,   suffix: '',  label: 'Pays présents' },
-  { val: 4,   suffix: '',  label: 'Secteurs clés' },
-  { val: 360, suffix: '°', label: 'Accompagnement' },
-  { val: 19,   suffix: '',  label: 'Partenaire de confiance' },
-]
+import { useTranslation } from '../src/i18n/LanguageContext'
 
 function StatItem({ val, suffix = '', label }) {
   const ref = useRef(null)
@@ -38,6 +32,9 @@ function StatItem({ val, suffix = '', label }) {
 }
 
 export default function Stats() {
+  const { t } = useTranslation()
+  const stats = t('stats.items') || []
+
   return (
     <div className="stats-band reveal">
       {stats.map(s => (

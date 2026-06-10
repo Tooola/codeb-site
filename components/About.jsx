@@ -1,22 +1,21 @@
-const pills = [
-  'Solaire', 'Hydroélectrique', 'Biomasse', 'Éolien',
-  'Infrastructure électrique', 'Eau & Assainissement', 'Big Data',
-]
+import { useTranslation } from '../src/i18n/LanguageContext'
 
 export default function About() {
+  const { t } = useTranslation()
+  const pills = t('about.pills') || []
   return (
     <section className="about" id="about">
       <div className="about-text reveal right">
-        <div className="section-label">À propos de CODEB</div>
+        <div className="section-label">{t('about.label')}</div>
         <h2>
-          Développeur de projets<br />
-          <em>clé en main · bout en bout</em>
+          {t('about.title_start')}<br />
+          <em>{t('about.title_strong')}</em>
         </h2>
         <p>
-          CODEB est une entreprise pluridisciplinaire qui identifie, finance et déploie des projets à fort impact des énergies propres aux infrastructures essentielles.
+          {t('about.desc1')}
         </p>
         <p>
-          Nous offrons aux gouvernements et investisseurs un accès clé-en-main : analyses de marché, structuration financière, et exécution technique de bout en bout.
+          {t('about.desc2')}
         </p>
         <div className="about-pills">
           {pills.map(p => (
@@ -25,7 +24,7 @@ export default function About() {
         </div>
       </div>
       <div className="about-visual">
-        <img src="/images/pont.png" alt="À propos" />
+        <img src="/images/pont.png" alt="CODEB" />
         <div className="about-visual-overlay"></div>
       </div>
     </section>

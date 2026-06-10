@@ -1,58 +1,39 @@
 import { Zap, Droplets, Database, Sun } from 'lucide-react'
+import { useTranslation } from '../src/i18n/LanguageContext'
 
-const svcs = [
-  {
-    num: '01',
-    icon: Sun,
-    img: '/images/EnerRenou.png',
-    imgAlt: 'Panneaux solaires champ Afrique',
-    title: 'Énergies Renouvelables',
-    desc: "Développeur clé en main de centrales solaires, hydroélectriques, biomasse et éoliennes de l'identification site jusqu'à sa mise en œuvre.",
-    tags: ['Solaire', 'Hydro', 'Biomasse', 'Éolien'],
-  },
-  {
-    num: '02',
-    icon: Zap,
-    img: '/images/InfraElectrique.png',
-    imgAlt: 'Lignes haute tension pylônes électriques',
-    title: 'Infrastructure Électrique',
-    desc: "Études d'électrification, installation de poteaux, raccordement au réseau et lignes haute tension de la conception à la mise en service.",
-    tags: ['Électrification', 'Poteaux', 'Raccordement', 'Haute tension'],
-  },
-  {
-    num: '03',
-    icon: Droplets,
-    img: '/images/eaux&infra.png',
-    imgAlt: 'Château eau infrastructure hydraulique',
-    title: 'Eaux & Assainissement',
-    desc: "Villes intelligentes, réseaux d'eau, dessalement et stations d'épuration pour besoins industriels et municipaux.",
-    tags: ['Smart Cities', 'Dessalement', 'Épuration'],
-  },
-  {
-    num: '04',
-    icon: Database,
-    img: '/images/bigdata.jpg',
-    imgAlt: 'Big Data solutions',
-    title: 'Solutions Big Data',
-    desc: 'Collecte, modélisation et dashboards pour transformer les données brutes en décisions stratégiques pour institutions et entreprises.',
-    tags: ['Telecom', 'Fintech', 'Banque'],
-  },
+const icons = [Sun, Zap, Droplets, Database]
+const images = [
+  '/images/EnerRenou.png',
+  '/images/InfraElectrique.png',
+  '/images/eauxinfra.png',
+  '/images/bigdata.jpg'
 ]
 
 export default function Services() {
+  const { t } = useTranslation()
+  const items = t('services.items') || []
+
+  const svcs = items.map((item, index) => ({
+    num: `0${index + 1}`,
+    icon: icons[index],
+    img: images[index],
+    imgAlt: item.title,
+    title: item.title,
+    desc: item.desc,
+    tags: item.tags,
+  }))
+
   return (
     <section className="services" id="services">
       <div className="services-header reveal">
         <div>
-          <div className="section-label">Domaines d'intervention</div>
+          <div className="section-label">{t('services.label')}</div>
           <h2 className="services-title">
-            Projets<br /><span>clé en main</span>
+            {t('services.title_start')}<br /><span>{t('services.title_strong')}</span>
           </h2>
         </div>
         <p>
-          De l'identification du site jusqu'à la mise en service CODEB développe,
-          finance et construit des projets d'énergie et d'infrastructure en Afrique,
-          de bout en bout.
+          {t('services.desc')}
         </p>
       </div>
 
@@ -71,8 +52,8 @@ export default function Services() {
               <h3>{s.title}</h3>
               <p>{s.desc}</p>
               <div className="svc-tags">
-                {s.tags.map(t => (
-                  <span key={t} className="svc-tag">{t}</span>
+                {s.tags.map(tag => (
+                  <span key={tag} className="svc-tag">{tag}</span>
                 ))}
               </div>
             </div>
